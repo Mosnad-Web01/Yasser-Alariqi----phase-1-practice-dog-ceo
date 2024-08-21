@@ -4,11 +4,27 @@
     <meta charset="utf-8">
     <title>Intro to AJAX Practice Tasks</title>
     <script src="src/index.js" charset="utf-8"></script>
+    <style>
+      .dog-image-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+        gap: 10px;
+      }
+      .dog-image-container img {
+        width: 100%;
+        height: 400px;
+      }
+      #dog-breeds {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+        gap: 10px;
+      }
+    </style>
   </head>
   <body>
     <h1>Dog CEO</h1>
 
-    <div id="dog-image-container">
+    <div id="dog-image-container" class="dog-image-container">
       <!-- images here -->
     </div>
 
